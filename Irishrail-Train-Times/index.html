@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='UTF-8'>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+	<script src="scripts.js"></script>
+	<style>
+		table, th, td{ border: 1px solid black; margin-left:5%; }
+		th, td{ padding: 5px; background-color:white;}
+		td{ width:120px; height: 30px; text-align:center; }
+		/*Ref for background: http://www.irishrail.ie/media/2243_rosslare_dublin_072.jpg*/
+		body{ background: url("imgs/background.jpg"); background-repeat:no-repeat; background-size: cover; background-position: centre centre; }
+		table{ height:100px; display:block; overflow:auto; height:523px; width:40%; border: 0px;}
+		#info{ width:40%; height:40px; margin-left:5%; text-align:center; background-color: #5c9b41; font-family: "Tangerine", serif; font-weight: bold;}
+		#headers{ font-weight: bold;}
+		select{ margin-left:20%; }
+
+	</style>
+</head>
+<body>
+	<select id="station_dropdown" onclick="loadXML()"></select>
+	<div class="w3-xlarge" id="info"><p id="table_title"></p></div>
+	<table id="xml_table"></table>
+	<p id="err"></p>
+</body>
+</html>
